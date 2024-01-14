@@ -1,0 +1,46 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Authentication Demo</title>
+
+  <!-- Include Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-firestore.js"></script>
+
+  <!-- Initialize Firebase with your configuration -->
+  <script>
+    const firebaseConfig = {
+      apiKey: 'AIzaSyCsjpWlEJv7A-BjyGEoD7DeKCM4jWXOTr8',
+      authDomain: 'example-ee3dd.firebaseapp.com',
+      projectId: 'example-ee3dd',
+      storageBucket: 'example-ee3dd.appspot.com',
+      messagingSenderId: '710571178314',
+      appId: '1:710571178314:web:5f08cfe64af6e5755b29b3'
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Initialize Firestore
+    const db = firebase.firestore();
+  </script>
+</head>
+<body>
+
+  <h1>Firebase Authentication Demo</h1>
+
+  <!-- Buttons for authentication actions -->
+  <button onclick="signup()">Sign Up</button>
+  <button onclick="login()">Log In</button>
+  <button onclick="logout()">Log Out</button>
+
+  <!-- Include your JavaScript file -->
+  <script src="app.js"></script>
+
+</body>
+</html>
